@@ -42,6 +42,11 @@ const defaultStyles = makeStyles((theme) => {
       alignItems: "center",
       padding: "1rem 1.4rem",
       borderRadius: "0 0 0.4rem 0.4rem",
+      "&:hover": {
+        backgroundColor: (darkMode) => {
+          return darkMode ? "hsl(232, 19%, 15%)" : "hsl(225, 100%, 98%)";
+        },
+      },
     },
   };
 });
